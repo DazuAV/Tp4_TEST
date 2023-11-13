@@ -17,10 +17,28 @@ public class gameBowlingtest {
 	
 	@Test
 	public void test() { 
-	int resu =gameBowling.partie(0);
+		
+	int resu =gameBowling.score(0);
+	int y;
+	
+	for(int i=0; i<20;i++) {
+		
+		gameBowling.roll();
+	assertEquals(0,gameBowling.score());
+	}
+	
 	
 	assert resu==0: "test bon";
 	
+	for(y=0;y<20;y++) {
+	int resu1 =gameBowling.score(0);}
+	
+	assert resu==0: "";
+	
 	}
+	
+	
+	
+	
 
 }
